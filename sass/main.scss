@@ -1,0 +1,531 @@
+html{
+    // background: #110705;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    // background: url("https://media.mmo-champion.com/images/news/2013/may/background_d3.jpg");
+    background: url("../img/bg.jpg") no-repeat;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-attachment: fixed;
+    background-size: 100%; /* Современные браузеры */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+p {
+    padding: 0px;
+    margin: 0px;
+}
+
+input,textarea {
+    outline: none;
+}
+
+.uparrow {
+    position: fixed;
+    // display: none;
+    left: 50px;
+    bottom: 50px;
+    border-radius: 100px;
+    padding: 10px;
+    background: rgba(255,255,255,.1);
+    cursor: pointer;
+}
+
+header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        align-items: center;
+        margin: auto;
+        color:white;
+
+        .logo {
+            letter-spacing: 2;
+            color:gold;
+            padding: 40px 60px;
+            font-size: 25px;
+        }
+
+        .menu {
+            display: flex;
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 200px;
+                height: 100px;;
+                text-align: center;
+                text-decoration: none;
+                padding: 10px 0px 10px 0px;
+                color:white;
+                font-size: 24px;
+                transform: skew(-20deg);
+                border-left: 1px solid gold;    
+                border-right: 1px solid gold;
+                overflow: hidden;
+                cursor: pointer;
+
+                &:hover{
+                    .shadow {
+                        transform: skew(20deg) scale(1.3);
+                    }
+                }
+
+                .shadow {
+                    position: absolute;
+                    transform:skawe(20deg);
+                    width: 200%;
+                    height: 200%;
+                    background-position: center;
+                    transition: all .7s;
+
+                }
+
+                .logo {
+                    color:gold;
+                    margin-left: 10px;
+                }
+
+                div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    transform: skew(20deg);
+                    letter-spacing: 1;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    width: 200%;
+                    height: 100%;
+                    transition:all .5s;
+
+                    &:hover{
+                        background-color: rgba(0, 0, 0, 0.3);
+                    }
+                }
+            }
+        }   
+    }
+}
+
+.sign {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    .btnsSign {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1200px;
+        margin: auto;
+        padding: 10px 40px;
+        color: white;
+
+        input {
+            margin-left: 10px;
+            padding: 10px 10px;
+            border-radius: 10px;
+            border: 1px solid rgba(255,215,0,.3);
+        }
+
+        .cancel {
+            color: white;
+            position: absolute;
+            right: 65px;
+            top:10px;
+            font-weight: 600;
+            cursor: pointer;
+            padding: 5px 10px;
+            background: tomato;
+
+        }
+
+        .btnsignin, .btnsignup {
+            padding: 7px 20px;
+            background-color: gold;
+            cursor: pointer;
+            color: black;
+            margin-left: 10px;
+            border-radius: 10px;
+            transition: all 1s;
+            border: 1px solid rgb(225,255,225);
+        }
+
+        .language {
+            display: flex;
+            align-items: center;
+            border: none;
+            margin-left: 20px;
+            cursor: pointer;
+
+            .select {
+                width: 20px;
+                margin-left: 10px;
+            }
+
+            .droparrow {
+                width: 10px;
+                margin-left: 5px;
+            }
+
+            .wrapper {
+                z-index: 1;
+                position: absolute;
+                padding: 10px;
+                top: 100%;
+                background-color: rgba(0, 0, 0, 0.6);
+                display: none;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    color:white;
+
+                    p {
+                        margin-left:5px;
+                    }
+
+                    img {
+                        width: 25px;
+                        display: inline;
+                    }
+
+                    &:nth-child(even) {
+                        margin-top:10px;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .formSignup {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+        // height: 0;
+       
+        
+
+        input {
+            width: 300px;
+            padding: 10px 10px;
+            border-radius: 10px;
+            border: 1px solid rgba(255,215,0,.3);
+            margin-top: 10px;
+            box-sizing: border-box;
+        }
+
+        .btns{
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+            width: 300px;
+
+            .sendSignup, .cancelForm{
+                padding: 7px 8px;
+                background-color: gold;
+                cursor: pointer;
+                color: black;
+                margin-top: 10px; 
+                border-radius: 10px;
+                transition: all 1s;
+                border: 1px solid #e1ffe1;
+                width: 125px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.cog {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    top: 20px;
+    right: 20px;
+}
+
+
+.index {
+    width: 1200px;
+    margin: auto;
+    padding: 10px;
+    background: white;
+    margin-top: 20px;
+
+    .mainNews {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .newsItem {
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .content {
+                position: absolute;
+                bottom: -150%;
+                left: 0px;
+                width: 100%;
+                background-color:rgba(0,0,0,.6);
+                padding: 10px 15px;
+                color:white;
+                max-height: 100px;
+                text-overflow: ellipsis;
+                transition: all .5s;
+                font-size: 20px;
+            }
+
+            .title {
+                position: absolute;
+                width: 100%;
+                top:50%;
+                background-color: rgba(255,255,255,.6);
+                text-align: center;
+                font-size: 20px;
+                font-weight:500;
+                padding:5px;
+                border: 1px solid rgba(0,0,0,.3);
+                color: black;
+            }
+
+        }
+        .big {
+            position: relative;
+            max-width: 710px;
+            width: 100%;
+            height: 350px;
+            border: 1px solid rgba(0,0,0,.3);
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .medium {
+            position: relative;
+            max-width: 470px;
+            width: 100%;
+            height: 350px;
+            border: 1px 0px solid rgba(0,0,0,.3);
+            cursor: pointer;
+            overflow: hidden;
+        
+        }
+
+        .little {
+            max-width: 280px;
+            width: 100%;
+            height: 175px;
+            border: 1px solid rgba(0,0,0,.3);
+            margin-top: 15px;
+            cursor: pointer;
+
+        }
+    }
+
+    .reclamWrapper {
+        margin-top:20px;
+        padding: 40px 0px;
+        width: 100%;
+        color:black;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 900;
+        border: 1px solid rgba(0,0,0,.3);
+        // display: none;
+    }
+
+    .allNewsWrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+
+        .allNews {
+            flex: 0 835px;
+            max-width: 850px;
+            width: 100%;
+            border-right: 1px solid rgba(0,0,0,.3);
+            padding-right: 10px;
+            // height: 900px;
+
+            .item {
+                display: flex;
+                border-bottom: 1px solid rgba(0,0,0,.3);
+                padding: 10px 0px 5px 0px;
+                // flex-wrap: wrap;
+
+                .image {
+                    width: 220px;
+                    flex:0 220px;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        transition:all .7s;
+                        &:hover {
+                            transform: scale(1.3);
+                        }
+                    }
+                
+                }
+
+                .wrapper {
+                    padding: 0px 10px;
+                    flex: 1;
+
+                    .title {
+                        font-weight: 700;
+                        text-decoration: none;
+                        color:black;
+                        transition: all .3s;
+
+                        &:hover {
+                            color:#FF7700;
+                        }
+                    }
+
+                    .date {
+                        color:rgba(0,0,0,.6);
+                        font-size: 12px;
+                    }
+                }
+
+            }
+
+            .btnShowAll {
+                padding: 10px 20px;
+                background-color: gold;
+                cursor: pointer;
+                color: black;
+                margin-left: 10px;
+                border-radius: 10px;
+                transition: all 1s;
+                border: 1px solid #e1ffe1;
+                width: 150px;
+                text-align: center;
+                margin-top:10px;
+            }
+        }
+
+        .leftPanel {
+            flex: 0 340px;
+            height: 500px;
+            border: 1px solid rgba(0,0,0,.3);
+        }
+    }
+}
+
+.news {
+    width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 10px 15px;
+    margin-top: 20px;
+    min-height: 500px;
+
+    .image{
+        img{
+            object-fit: cover;
+            min-width: 450px;
+            max-width: 500px;
+            margin-right: 10px;
+        }
+        float: left;
+    }
+    .title{
+        font-weight: 600;
+        font-size: 22px;
+    }
+
+    .content {
+
+    }
+
+}
+
+
+.showContent {
+    bottom:0px!important;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background-color: #212121;
+    margin-top:20px;
+    text-align: center;
+    color:#737373;
+}
+
+.eng {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+
+    .back {
+        position: absolute;
+        left: 10px;
+        top:10px;
+        cursor: pointer;
+    }
+
+    h1 {
+        color:white;
+    }
+
+    .form{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: stretch;
+        width: 450px;
+        margin: auto;
+
+        p{
+            color:white;
+        }
+
+        input{
+            margin-top:10px;
+            padding: 5px 15px;
+        }
+
+        .btnSend {
+            background: gold;
+            text-align: center;
+            padding: 5px 10px;
+            margin-top:10px;
+        }
+
+    }
+}

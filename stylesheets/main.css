@@ -1,0 +1,517 @@
+@charset "UTF-8";
+/* line 4, ../sass/main.scss */
+body {
+	margin: 0px;
+	padding: 0px;
+	background: url("../img/bg.jpg") no-repeat;
+	-moz-background-size: 100%;
+	/* Firefox 3.6+ */
+	-webkit-background-size: 100%;
+	/* Safari 3.1+ ╨╕ Chrome 4.0+ */
+	-o-background-size: 100%;
+	/* Opera 9.6+ */
+	background-attachment: fixed;
+	background-size: 100%;
+	/* ╨б╨╛╨▓╤А╨╡╨╝╨╡╨╜╨╜╤Л╨╡ ╨▒╤А╨░╤Г╨╖╨╡╤А╤Л */
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* line 20, ../sass/main.scss */
+p {
+	padding: 0px;
+	margin: 0px;
+}
+
+/* line 25, ../sass/main.scss */
+input, textarea {
+	outline: none;
+}
+
+/* line 29, ../sass/main.scss */
+.uparrow {
+	position: fixed;
+	left: 50px;
+	bottom: 50px;
+	border-radius: 100px;
+	padding: 10px;
+	background: rgba(255, 255, 255, 0.1);
+	cursor: pointer;
+}
+
+/* line 40, ../sass/main.scss */
+header {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.85);
+}
+/* line 44, ../sass/main.scss */
+header .wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	align-items: center;
+	margin: auto;
+	color: white;
+}
+/* line 52, ../sass/main.scss */
+header .wrapper .logo {
+	letter-spacing: 2;
+	color: gold;
+	padding: 40px 60px;
+	font-size: 25px;
+}
+/* line 59, ../sass/main.scss */
+header .wrapper .menu {
+	display: flex;
+}
+/* line 62, ../sass/main.scss */
+header .wrapper .menu a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	height: 100px;
+	text-align: center;
+	text-decoration: none;
+	padding: 10px 0px 10px 0px;
+	color: white;
+	font-size: 24px;
+	transform: skew(-20deg);
+	border-left: 1px solid gold;
+	border-right: 1px solid gold;
+	overflow: hidden;
+	cursor: pointer;
+}
+/* line 80, ../sass/main.scss */
+header .wrapper .menu a:hover .shadow {
+	transform: skew(20deg) scale(1.3);
+}
+/* line 85, ../sass/main.scss */
+header .wrapper .menu a .shadow {
+	position: absolute;
+	transform: skawe(20deg);
+	width: 200%;
+	height: 200%;
+	background-position: center;
+	transition: all .7s;
+}
+/* line 95, ../sass/main.scss */
+header .wrapper .menu a .logo {
+	color: gold;
+	margin-left: 10px;
+}
+/* line 100, ../sass/main.scss */
+header .wrapper .menu a div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	transform: skew(20deg);
+	letter-spacing: 1;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 200%;
+	height: 100%;
+	transition: all .5s;
+}
+/* line 112, ../sass/main.scss */
+header .wrapper .menu a div:hover {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* line 121, ../sass/main.scss */
+.sign {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+/* line 127, ../sass/main.scss */
+.sign .btnsSign {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 1200px;
+	margin: auto;
+	padding: 10px 40px;
+	color: white;
+}
+/* line 137, ../sass/main.scss */
+.sign .btnsSign input {
+	margin-left: 10px;
+	padding: 10px 10px;
+	border-radius: 10px;
+	border: 1px solid rgba(255, 215, 0, 0.3);
+}
+/* line 144, ../sass/main.scss */
+.sign .btnsSign .cancel {
+	color: white;
+	position: absolute;
+	right: 65px;
+	top: 10px;
+	font-weight: 600;
+	cursor: pointer;
+	padding: 5px 10px;
+	background: tomato;
+}
+/* line 156, ../sass/main.scss */
+.sign .btnsSign .btnsignin, .sign .btnsSign .btnsignup {
+	padding: 7px 20px;
+	background-color: gold;
+	cursor: pointer;
+	color: black;
+	margin-left: 10px;
+	border-radius: 10px;
+	transition: all 1s;
+	border: 1px solid #e1ffe1;
+}
+/* line 167, ../sass/main.scss */
+.sign .btnsSign .language {
+	display: flex;
+	align-items: center;
+	border: none;
+	margin-left: 20px;
+	cursor: pointer;
+}
+/* line 174, ../sass/main.scss */
+.sign .btnsSign .language .select {
+	width: 20px;
+	margin-left: 10px;
+}
+/* line 179, ../sass/main.scss */
+.sign .btnsSign .language .droparrow {
+	width: 10px;
+	margin-left: 5px;
+}
+/* line 184, ../sass/main.scss */
+.sign .btnsSign .language .wrapper {
+	z-index: 1;
+	position: absolute;
+	padding: 10px;
+	top: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	display: none;
+}
+/* line 192, ../sass/main.scss */
+.sign .btnsSign .language .wrapper a {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: white;
+}
+/* line 198, ../sass/main.scss */
+.sign .btnsSign .language .wrapper a p {
+	margin-left: 5px;
+}
+/* line 202, ../sass/main.scss */
+.sign .btnsSign .language .wrapper a img {
+	width: 25px;
+	display: inline;
+}
+/* line 207, ../sass/main.scss */
+.sign .btnsSign .language .wrapper a:nth-child(even) {
+	margin-top: 10px;
+}
+/* line 216, ../sass/main.scss */
+.sign .formSignup {
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 20px;
+}
+/* line 226, ../sass/main.scss */
+.sign .formSignup input {
+	width: 300px;
+	padding: 10px 10px;
+	border-radius: 10px;
+	border: 1px solid rgba(255, 215, 0, 0.3);
+	margin-top: 10px;
+	box-sizing: border-box;
+}
+/* line 235, ../sass/main.scss */
+.sign .formSignup .btns {
+	display: flex;
+	justify-content: space-between;
+	box-sizing: border-box;
+	width: 300px;
+}
+/* line 241, ../sass/main.scss */
+.sign .formSignup .btns .sendSignup, .sign .formSignup .btns .cancelForm {
+	padding: 7px 8px;
+	background-color: gold;
+	cursor: pointer;
+	color: black;
+	margin-top: 10px;
+	border-radius: 10px;
+	transition: all 1s;
+	border: 1px solid #e1ffe1;
+	width: 125px;
+	text-align: center;
+}
+
+/* line 257, ../sass/main.scss */
+.cog {
+	display: none;
+	position: absolute;
+	cursor: pointer;
+	top: 20px;
+	right: 20px;
+}
+
+/* line 266, ../sass/main.scss */
+.index {
+	width: 1200px;
+	margin: auto;
+	padding: 10px;
+	background: white;
+	margin-top: 20px;
+}
+/* line 273, ../sass/main.scss */
+.index .mainNews {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+/* line 281, ../sass/main.scss */
+.index .mainNews .newsItem img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+/* line 287, ../sass/main.scss */
+.index .mainNews .newsItem .content {
+	position: absolute;
+	bottom: -150%;
+	left: 0px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 10px 15px;
+	color: white;
+	max-height: 100px;
+	text-overflow: ellipsis;
+	transition: all .5s;
+	font-size: 20px;
+}
+/* line 301, ../sass/main.scss */
+.index .mainNews .newsItem .title {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	background-color: rgba(255, 255, 255, 0.6);
+	text-align: center;
+	font-size: 20px;
+	font-weight: 500;
+	padding: 5px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	color: black;
+}
+/* line 315, ../sass/main.scss */
+.index .mainNews .big {
+	position: relative;
+	max-width: 710px;
+	width: 100%;
+	height: 350px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+	overflow: hidden;
+}
+/* line 325, ../sass/main.scss */
+.index .mainNews .medium {
+	position: relative;
+	max-width: 470px;
+	width: 100%;
+	height: 350px;
+	border: 1px 0px solid rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+	overflow: hidden;
+}
+/* line 336, ../sass/main.scss */
+.index .mainNews .little {
+	max-width: 280px;
+	width: 100%;
+	height: 175px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	margin-top: 15px;
+	cursor: pointer;
+}
+/* line 347, ../sass/main.scss */
+.index .reclamWrapper {
+	margin-top: 20px;
+	padding: 40px 0px;
+	width: 100%;
+	color: black;
+	text-align: center;
+	font-size: 40px;
+	font-weight: 900;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+/* line 359, ../sass/main.scss */
+.index .allNewsWrapper {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+/* line 364, ../sass/main.scss */
+.index .allNewsWrapper .allNews {
+	flex: 0 835px;
+	max-width: 850px;
+	width: 100%;
+	border-right: 1px solid rgba(0, 0, 0, 0.3);
+	padding-right: 10px;
+}
+/* line 372, ../sass/main.scss */
+.index .allNewsWrapper .allNews .item {
+	display: flex;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	padding: 10px 0px 5px 0px;
+}
+/* line 378, ../sass/main.scss */
+.index .allNewsWrapper .allNews .item .image {
+	width: 220px;
+	flex: 0 220px;
+	overflow: hidden;
+}
+/* line 383, ../sass/main.scss */
+.index .allNewsWrapper .allNews .item .image img {
+	width: 100%;
+	transition: all .7s;
+}
+/* line 386, ../sass/main.scss */
+.index .allNewsWrapper .allNews .item .image img:hover {
+	transform: scale(1.3);
+}
+/* line 393, ../sass/main.scss */
+.index .allNewsWrapper .allNews .item .wrapper {
+	padding: 0px 10px;
+	flex: 1;
+}
+/* line 397, ../sass/main.scss */
+.index .allNewsWrapper .allNews .item .wrapper .title {
+	font-weight: 700;
+	text-decoration: none;
+	color: black;
+	transition: all .3s;
+}
+/* line 403, ../sass/main.scss */
+.index .allNewsWrapper .allNews .item .wrapper .title:hover {
+	color: #FF7700;
+}
+/* line 408, ../sass/main.scss */
+.index .allNewsWrapper .allNews .item .wrapper .date {
+	color: rgba(0, 0, 0, 0.6);
+	font-size: 12px;
+}
+/* line 416, ../sass/main.scss */
+.index .allNewsWrapper .allNews .btnShowAll {
+	padding: 10px 20px;
+	background-color: gold;
+	cursor: pointer;
+	color: black;
+	margin-left: 10px;
+	border-radius: 10px;
+	transition: all 1s;
+	border: 1px solid #e1ffe1;
+	width: 150px;
+	text-align: center;
+	margin-top: 10px;
+}
+/* line 431, ../sass/main.scss */
+.index .allNewsWrapper .leftPanel {
+	flex: 0 340px;
+	height: 500px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/* line 439, ../sass/main.scss */
+.news {
+	width: 1200px;
+	margin: auto;
+	background: white;
+	padding: 10px 15px;
+	margin-top: 20px;
+	min-height: 500px;
+}
+/* line 447, ../sass/main.scss */
+.news .image {
+	float: left;
+}
+/* line 448, ../sass/main.scss */
+.news .image img {
+	object-fit: cover;
+	min-width: 450px;
+	max-width: 500px;
+	margin-right: 10px;
+}
+/* line 456, ../sass/main.scss */
+.news .title {
+	font-weight: 600;
+	font-size: 22px;
+}
+
+/* line 468, ../sass/main.scss */
+.showContent {
+	bottom: 0px !important;
+}
+
+/* line 473, ../sass/main.scss */
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 200px;
+	background-color: #212121;
+	margin-top: 20px;
+	text-align: center;
+	color: #737373;
+}
+
+/* line 485, ../sass/main.scss */
+.eng {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.85);
+}
+/* line 495, ../sass/main.scss */
+.eng .back {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	cursor: pointer;
+}
+/* line 502, ../sass/main.scss */
+.eng h1 {
+	color: white;
+}
+/* line 506, ../sass/main.scss */
+.eng .form {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: stretch;
+	width: 450px;
+	margin: auto;
+}
+/* line 514, ../sass/main.scss */
+.eng .form p {
+	color: white;
+}
+/* line 518, ../sass/main.scss */
+.eng .form input {
+	margin-top: 10px;
+	padding: 5px 15px;
+}
+/* line 523, ../sass/main.scss */
+.eng .form .btnSend {
+	background: gold;
+	text-align: center;
+	padding: 5px 10px;
+	margin-top: 10px;
+}
