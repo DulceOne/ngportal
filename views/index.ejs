@@ -12,28 +12,40 @@
    
     <div class="index">
         <div class="mainNews">
-            <a href="/news/<%-docs.main[0]._id%>" class="big newsItem">
-                <img src="<%-docs.main[0].image%>" alt="">
-                <div class="title"><%-docs.main[0].title%></div>
-                <div class="content"><%-docs.main[0].content%></div>
-            </a>
-            <a class="medium newsItem" href="/news/<%-docs.main[1]._id%>" >
-                <img src="<%-docs.main[1].image%>" alt="">
-                <div class="title"><%-docs.main[1].title%></div>
-                <div class="content"><%-docs.main[1].content%></div>
-            </a>
-            <a class="little newsItem" href="/news/<%-docs.main[2]._id%>" >
-                <img src="<%-docs.main[2].image%>">
-            </a>
-            <a class="little newsItem" href="/news/<%-docs.main[3]._id%>" >
-                <img src="<%-docs.main[3].image%>" alt="">
-            </a>
-            <a class="little newsItem" href="/news/<%-docs.main[4]._id%>" >
-                <img src="<%-docs.main[4].image%>" alt="">
-            </a>
-            <a class="little newsItem" href="/news/<%-docs.main[5]._id%>" >
-                <img src="<%-docs.main[5].image%>" alt="">
-            </a>
+            <%if(docs.main.length>0){%>
+                <a href="/news/<%-docs.main[0]._id%>" class="big newsItem">
+                    <img src="<%-docs.main[0].image%>" alt="">
+                    <div class="title"><%-docs.main[0].title%></div>
+                    <div class="content"><%-docs.main[0].content%></div>
+                </a>
+            <%}%>
+            <%if(docs.main.length>1){%>
+                <a class="medium newsItem" href="/news/<%-docs.main[1]._id%>" >
+                    <img src="<%-docs.main[1].image%>" alt="">
+                    <div class="title"><%-docs.main[1].title%></div>
+                    <div class="content"><%-docs.main[1].content%></div>
+                </a>
+            <%}%>
+            <%if(docs.main.length>2){%>
+                <a class="little newsItem" href="/news/<%-docs.main[2]._id%>" >
+                    <img src="<%-docs.main[2].image%>">
+                </a>
+            <%}%>
+            <%if(docs.main.length>3){%>
+                <a class="little newsItem" href="/news/<%-docs.main[3]._id%>" >
+                    <img src="<%-docs.main[3].image%>" alt="">
+                </a>
+            <%}%>
+            <%if(docs.main.length>4){%>
+                <a class="little newsItem" href="/news/<%-docs.main[4]._id%>" >
+                    <img src="<%-docs.main[4].image%>" alt="">
+                </a>
+            <%}%>
+            <%if(docs.main.length>5){%>
+                <a class="little newsItem" href="/news/<%-docs.main[5]._id%>" >
+                    <img src="<%-docs.main[5].image%>" alt="">
+                </a>
+            <%}%>
         </div>
         <div class="reclamWrapper">
             Здесь могла бы разместиться ваша реклама
