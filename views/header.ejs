@@ -15,9 +15,14 @@
 
 <div class="sign">
     <div class="btnsSign">
-        <input type="text" placeholder="Login" id="signinLogin">
-        <input type="password" placeholder="Password" id="signinPassword">
-        <span class="btnsignin">Вход</span> <span class="btnsignup">Регистрация </span>
+        <%if(!profil.isLogin){%>
+            <input type="text" placeholder="Login" id="signinLogin">
+            <input type="password" placeholder="Password" id="signinPassword">
+            <span class="btnsignin">Вход</span> <span class="btnsignup">Регистрация </span>
+        <%}else if(profil.isLogin){%>
+            <a href="/profil/<%-profil.user%>" class="btnprofil">Мой профиль</a>
+            <span class="btnSignOut">Выход</span>
+        <%}%>
         <span class="cancel">X</span>
         <div class="language">
             Язык:<img class="select" src="/img/rus.png" alt=""><img class="droparrow" src="/img/arrowdown.png" alt="">

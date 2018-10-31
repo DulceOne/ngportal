@@ -89,14 +89,26 @@ $("document").ready(function() {
                 url: "/signIn",
                 type: "POST",
                 data: {
-                    login,
+                    username:login,
                     password
                 }
             }).done(function(res) {
-                if(res) alert(res.login);
+                if(res) location.reload();
             })
         }
     })
+
+    //SignOut
+
+    $(".sign .btnSignOut").click(function() {
+        $.ajax({
+            url: "/logout",
+            type: "POST",
+        }).done(function(res) {
+            if(res) location.reload();
+        })
+    })
+    
 
 });
 

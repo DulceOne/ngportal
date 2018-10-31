@@ -55,10 +55,18 @@ exports.signUp = function(user,cb) {
     });
 }
 
-
-exports.signIn = function(user,cb) {
-    db.get().collection('users').findOne({login: user.login,password: user.password},function(err,docs) {
-        if(docs!==null) cb(err,docs);
-        else cb(404,docs);
+exports.getUser = function(user,cb) {
+    db.get().collection('users').findOne({login:user},function(err,doc) {
+        if(doc != null);
+            return cb(err,doc)
+        cb(err,doc);
     })
 }
+
+
+// exports.signIn = function(user,cb) {
+    // db.get().collection('users').findOne({login: user.login,password: user.password},function(err,docs) {
+    //     if(docs!==null) cb(err,docs);
+    //     else cb(404,docs);
+    // })
+// }
