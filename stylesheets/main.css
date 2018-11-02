@@ -139,7 +139,7 @@ header .wrapper .menu a div:hover {
 .sign .btnsSign input {
   margin-left: 10px;
   padding: 10px 10px;
-  border-radius: 10px;
+  border-radius: 4px;
   border: 1px solid rgba(255, 215, 0, 0.3);
 }
 /* line 144, ../sass/main.scss */
@@ -154,17 +154,18 @@ header .wrapper .menu a div:hover {
   background: tomato;
 }
 /* line 156, ../sass/main.scss */
-.sign .btnsSign .btnsignin, .sign .btnsSign .btnsignup, .sign .btnsSign .btnSignOut {
+.sign .btnsSign .btnsignin, .sign .btnsSign .btnsignup, .sign .btnsSign .btnSignOut, .sign .btnsSign .btnprofil {
   padding: 7px 20px;
   background-color: gold;
+  text-decoration: none;
   cursor: pointer;
   color: black;
   margin-left: 10px;
-  border-radius: 10px;
+  border-radius: 4px;
   transition: all 1s;
   border: 1px solid #e1ffe1;
 }
-/* line 167, ../sass/main.scss */
+/* line 168, ../sass/main.scss */
 .sign .btnsSign .language {
   display: flex;
   align-items: center;
@@ -172,17 +173,17 @@ header .wrapper .menu a div:hover {
   margin-left: 20px;
   cursor: pointer;
 }
-/* line 174, ../sass/main.scss */
+/* line 175, ../sass/main.scss */
 .sign .btnsSign .language .select {
   width: 20px;
   margin-left: 10px;
 }
-/* line 179, ../sass/main.scss */
+/* line 180, ../sass/main.scss */
 .sign .btnsSign .language .droparrow {
   width: 10px;
   margin-left: 5px;
 }
-/* line 184, ../sass/main.scss */
+/* line 185, ../sass/main.scss */
 .sign .btnsSign .language .wrapper {
   z-index: 1;
   position: absolute;
@@ -191,27 +192,27 @@ header .wrapper .menu a div:hover {
   background-color: rgba(0, 0, 0, 0.6);
   display: none;
 }
-/* line 192, ../sass/main.scss */
+/* line 193, ../sass/main.scss */
 .sign .btnsSign .language .wrapper a {
   display: flex;
   align-items: center;
   text-decoration: none;
   color: white;
 }
-/* line 198, ../sass/main.scss */
+/* line 199, ../sass/main.scss */
 .sign .btnsSign .language .wrapper a p {
   margin-left: 5px;
 }
-/* line 202, ../sass/main.scss */
+/* line 203, ../sass/main.scss */
 .sign .btnsSign .language .wrapper a img {
   width: 25px;
   display: inline;
 }
-/* line 207, ../sass/main.scss */
+/* line 208, ../sass/main.scss */
 .sign .btnsSign .language .wrapper a:nth-child(even) {
   margin-top: 10px;
 }
-/* line 216, ../sass/main.scss */
+/* line 217, ../sass/main.scss */
 .sign .formSignup {
   display: none;
   flex-direction: column;
@@ -219,7 +220,7 @@ header .wrapper .menu a div:hover {
   align-items: center;
   padding-bottom: 20px;
 }
-/* line 226, ../sass/main.scss */
+/* line 227, ../sass/main.scss */
 .sign .formSignup input {
   width: 300px;
   padding: 10px 10px;
@@ -228,14 +229,14 @@ header .wrapper .menu a div:hover {
   margin-top: 10px;
   box-sizing: border-box;
 }
-/* line 235, ../sass/main.scss */
+/* line 236, ../sass/main.scss */
 .sign .formSignup .btns {
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
   width: 300px;
 }
-/* line 241, ../sass/main.scss */
+/* line 242, ../sass/main.scss */
 .sign .formSignup .btns .sendSignup, .sign .formSignup .btns .cancelForm {
   padding: 7px 8px;
   background-color: gold;
@@ -249,7 +250,7 @@ header .wrapper .menu a div:hover {
   text-align: center;
 }
 
-/* line 257, ../sass/main.scss */
+/* line 258, ../sass/main.scss */
 .cog {
   display: none;
   position: absolute;
@@ -258,7 +259,7 @@ header .wrapper .menu a div:hover {
   right: 20px;
 }
 
-/* line 266, ../sass/main.scss */
+/* line 267, ../sass/main.scss */
 .index {
   width: 1200px;
   margin: auto;
@@ -266,7 +267,7 @@ header .wrapper .menu a div:hover {
   background: white;
   margin-top: 20px;
 }
-/* line 273, ../sass/main.scss */
+/* line 274, ../sass/main.scss */
 .index .mainNews {
   width: 100%;
   display: flex;
@@ -274,13 +275,13 @@ header .wrapper .menu a div:hover {
   justify-content: space-between;
   align-items: center;
 }
-/* line 281, ../sass/main.scss */
+/* line 282, ../sass/main.scss */
 .index .mainNews .newsItem img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-/* line 287, ../sass/main.scss */
+/* line 288, ../sass/main.scss */
 .index .mainNews .newsItem .content {
   position: absolute;
   bottom: -150%;
@@ -294,7 +295,7 @@ header .wrapper .menu a div:hover {
   transition: all .5s;
   font-size: 20px;
 }
-/* line 301, ../sass/main.scss */
+/* line 302, ../sass/main.scss */
 .index .mainNews .newsItem .title {
   position: absolute;
   width: 100%;
@@ -307,7 +308,7 @@ header .wrapper .menu a div:hover {
   border: 1px solid rgba(0, 0, 0, 0.3);
   color: black;
 }
-/* line 315, ../sass/main.scss */
+/* line 316, ../sass/main.scss */
 .index .mainNews .big {
   position: relative;
   max-width: 710px;
@@ -317,7 +318,7 @@ header .wrapper .menu a div:hover {
   cursor: pointer;
   overflow: hidden;
 }
-/* line 325, ../sass/main.scss */
+/* line 326, ../sass/main.scss */
 .index .mainNews .medium {
   position: relative;
   max-width: 470px;
@@ -327,7 +328,7 @@ header .wrapper .menu a div:hover {
   cursor: pointer;
   overflow: hidden;
 }
-/* line 336, ../sass/main.scss */
+/* line 337, ../sass/main.scss */
 .index .mainNews .little {
   max-width: 280px;
   width: 100%;
@@ -336,7 +337,7 @@ header .wrapper .menu a div:hover {
   margin-top: 15px;
   cursor: pointer;
 }
-/* line 347, ../sass/main.scss */
+/* line 348, ../sass/main.scss */
 .index .reclamWrapper {
   margin-top: 20px;
   padding: 40px 0px;
@@ -347,13 +348,13 @@ header .wrapper .menu a div:hover {
   font-weight: 900;
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
-/* line 359, ../sass/main.scss */
+/* line 360, ../sass/main.scss */
 .index .allNewsWrapper {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
-/* line 364, ../sass/main.scss */
+/* line 365, ../sass/main.scss */
 .index .allNewsWrapper .allNews {
   flex: 0 835px;
   max-width: 850px;
@@ -361,49 +362,49 @@ header .wrapper .menu a div:hover {
   border-right: 1px solid rgba(0, 0, 0, 0.3);
   padding-right: 10px;
 }
-/* line 372, ../sass/main.scss */
+/* line 373, ../sass/main.scss */
 .index .allNewsWrapper .allNews .item {
   display: flex;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   padding: 10px 0px 5px 0px;
 }
-/* line 378, ../sass/main.scss */
+/* line 379, ../sass/main.scss */
 .index .allNewsWrapper .allNews .item .image {
   width: 220px;
   flex: 0 220px;
   overflow: hidden;
 }
-/* line 383, ../sass/main.scss */
+/* line 384, ../sass/main.scss */
 .index .allNewsWrapper .allNews .item .image img {
   width: 100%;
   transition: all .7s;
 }
-/* line 386, ../sass/main.scss */
+/* line 387, ../sass/main.scss */
 .index .allNewsWrapper .allNews .item .image img:hover {
   transform: scale(1.3);
 }
-/* line 393, ../sass/main.scss */
+/* line 394, ../sass/main.scss */
 .index .allNewsWrapper .allNews .item .wrapper {
   padding: 0px 10px;
   flex: 1;
 }
-/* line 397, ../sass/main.scss */
+/* line 398, ../sass/main.scss */
 .index .allNewsWrapper .allNews .item .wrapper .title {
   font-weight: 700;
   text-decoration: none;
   color: black;
   transition: all .3s;
 }
-/* line 403, ../sass/main.scss */
+/* line 404, ../sass/main.scss */
 .index .allNewsWrapper .allNews .item .wrapper .title:hover {
   color: #FF7700;
 }
-/* line 408, ../sass/main.scss */
+/* line 409, ../sass/main.scss */
 .index .allNewsWrapper .allNews .item .wrapper .date {
   color: rgba(0, 0, 0, 0.6);
   font-size: 12px;
 }
-/* line 416, ../sass/main.scss */
+/* line 417, ../sass/main.scss */
 .index .allNewsWrapper .allNews .btnShowAll {
   padding: 10px 20px;
   background-color: gold;
@@ -417,14 +418,14 @@ header .wrapper .menu a div:hover {
   text-align: center;
   margin-top: 10px;
 }
-/* line 431, ../sass/main.scss */
+/* line 432, ../sass/main.scss */
 .index .allNewsWrapper .leftPanel {
   flex: 0 340px;
   height: 500px;
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-/* line 439, ../sass/main.scss */
+/* line 440, ../sass/main.scss */
 .news {
   width: 1200px;
   margin: auto;
@@ -433,29 +434,29 @@ header .wrapper .menu a div:hover {
   margin-top: 20px;
   min-height: 500px;
 }
-/* line 447, ../sass/main.scss */
+/* line 448, ../sass/main.scss */
 .news .image {
   float: left;
 }
-/* line 448, ../sass/main.scss */
+/* line 449, ../sass/main.scss */
 .news .image img {
   object-fit: cover;
   min-width: 450px;
   max-width: 500px;
   margin-right: 10px;
 }
-/* line 456, ../sass/main.scss */
+/* line 457, ../sass/main.scss */
 .news .title {
   font-weight: 600;
   font-size: 22px;
 }
 
-/* line 468, ../sass/main.scss */
+/* line 469, ../sass/main.scss */
 .showContent {
   bottom: 0px !important;
 }
 
-/* line 473, ../sass/main.scss */
+/* line 474, ../sass/main.scss */
 footer {
   display: flex;
   justify-content: center;
@@ -468,7 +469,7 @@ footer {
   color: #737373;
 }
 
-/* line 485, ../sass/main.scss */
+/* line 486, ../sass/main.scss */
 .eng {
   display: flex;
   flex-direction: column;
@@ -479,18 +480,18 @@ footer {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.85);
 }
-/* line 495, ../sass/main.scss */
+/* line 496, ../sass/main.scss */
 .eng .back {
   position: absolute;
   left: 10px;
   top: 10px;
   cursor: pointer;
 }
-/* line 502, ../sass/main.scss */
+/* line 503, ../sass/main.scss */
 .eng h1 {
   color: white;
 }
-/* line 506, ../sass/main.scss */
+/* line 507, ../sass/main.scss */
 .eng .form {
   display: flex;
   justify-content: center;
@@ -499,19 +500,57 @@ footer {
   width: 450px;
   margin: auto;
 }
-/* line 514, ../sass/main.scss */
+/* line 515, ../sass/main.scss */
 .eng .form p {
   color: white;
 }
-/* line 518, ../sass/main.scss */
+/* line 519, ../sass/main.scss */
 .eng .form input {
   margin-top: 10px;
   padding: 5px 15px;
 }
-/* line 523, ../sass/main.scss */
+/* line 524, ../sass/main.scss */
 .eng .form .btnSend {
   background: gold;
   text-align: center;
   padding: 5px 10px;
   margin-top: 10px;
+}
+
+/* line 534, ../sass/main.scss */
+.profil {
+  display: flex;
+  width: 1200px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+/* line 543, ../sass/main.scss */
+.profil .info {
+  display: flex;
+  flex-direction: column;
+}
+/* line 546, ../sass/main.scss */
+.profil .info .avatar {
+  width: 200px;
+  height: 250px;
+  display: flex;
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+/* line 557, ../sass/main.scss */
+.profil .info .tag {
+  margin-top: 10px;
+  text-align: center;
+}
+/* line 563, ../sass/main.scss */
+.profil .userInfo {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
 }

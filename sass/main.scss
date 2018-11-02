@@ -137,7 +137,7 @@ header {
         input {
             margin-left: 10px;
             padding: 10px 10px;
-            border-radius: 10px;
+            border-radius: 4px;
             border: 1px solid rgba(255,215,0,.3);
         }
 
@@ -153,13 +153,14 @@ header {
 
         }
 
-        .btnsignin, .btnsignup, .btnSignOut {
+        .btnsignin, .btnsignup, .btnSignOut, .btnprofil {
             padding: 7px 20px;
             background-color: gold;
+            text-decoration: none;
             cursor: pointer;
             color: black;
             margin-left: 10px;
-            border-radius: 10px;
+            border-radius: 4px;
             transition: all 1s;
             border: 1px solid rgb(225,255,225);
         }
@@ -527,5 +528,41 @@ footer {
             margin-top:10px;
         }
 
+    }
+}
+
+.profil {
+    display: flex;
+    width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    border: 1px solid rgba(0,0,0,.3);
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        .avatar {
+            width: 200px;
+            height: 250px;
+            display: flex;
+            background: rgba(0,0,0,.2);
+            color:white;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tag {
+            margin-top: 10px;
+            text-align: center;
+        }
+    }
+
+    .userInfo {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
     }
 }
