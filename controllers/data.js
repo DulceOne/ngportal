@@ -66,16 +66,17 @@ exports.getNews = function(req,res) {
                     result:docs,
                     profil:{
                         isLogin:true,
-                        user:"testParams"
+                        user:req.user.login
                     }
                 });
             }
-            
+        }
+        else{
             res.render('news.ejs',{
                 result:docs,
                 profil:{
                     isLogin:false,
-                    user:"testParams"
+                    user:"Not authorizet"
                 }
             });
         }
