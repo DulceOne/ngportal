@@ -2,8 +2,9 @@ var db = require('../db');
 var ObjectID = require('mongodb').ObjectID;
 
 exports.getNewsAll = function(cb){
-
+    
     db.get().collection('news').find().toArray(function(err,docs){
+        console.log(docs)
 
         var docs_new = new Array;
         var docs_other = new Array;

@@ -9,11 +9,11 @@ exports.connect = function(url,done){
 		return done();
 	}
 
-	MongoClient.connect(url,function(err,db){
+	MongoClient.connect(url,async function(err,db){
+
 		if(err){
 			return done(err);
 		}
-
 		state.db = db;
 		done();
 	});

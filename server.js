@@ -68,7 +68,8 @@ app.post('/logout',function(req,res){
 		res.sendStatus(200);
 	}
 })
-
+const password = process.env.DBPASSWORD
+const uri = `mongodb+srv://DulceOne:${password}@cluster0-q6cgg.mongodb.net/fulfilment`;
 db.connect('mongodb://localhost:27017/ngportal',function(err){
 
 	if(err){
