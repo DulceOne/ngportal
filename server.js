@@ -9,6 +9,7 @@ var passport = require('./autuh');
 var bodyParser = require('body-parser');
 var ObjectID = require('mongodb').ObjectID;
 var session = require('express-session');
+const port = process.env.PORT || 1488;
 
 	//           Защита роутов           //
 // exports.mustAuthenticatedMw = function (req, res, next){
@@ -76,7 +77,7 @@ db.connect('mongodb://localhost:27017/ngportal',function(err){
 		return console.log(err);
     }
     
-	app.listen(1488,function(){
+	app.listen(port,function(){
 		console.log("server started 1488");
     })
     
